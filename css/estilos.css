@@ -1,4 +1,99 @@
 /*Estilos para el recuperatorio de la segunda parte del primer parcial.*/
+/*El diseño también debe incluir colores de fondo y colores de texto, márgenes y padding que permitan una correcta organización y legibilidad del contenido.*/
+/*Se debe trabajar con rem y porcentajes como unidades de medida.*/
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Glegoo", sans-serif;
+    background-image: url("../img/fondo.jpg");
+    background-color: pink;
+}
+
+#contenedor {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+/*Encabezado*/
+header {
+    background: lightgreen;
+	padding: 1rem;
+	text-align: center;
+}
+
+h1,h2 {
+    color: crimson;
+    background-color: darkgrey;
+}
+/*Menú de navegación*/
+nav {
+    background-color: darkgray;
+}
+/*Eliminación de márgenes, padding y estilo de la lista <ul>*/
+nav ul {  
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+/*Cambio de la propiedad display de los elementos <li> como inline-block*/
+nav li {
+    display: inline-block; 
+}
+/*Definición de las dimensiones de los elementos <a>*/
+nav a {  
+	font-size: 1.4em;
+	line-height: 2.2em;
+	padding: 0.4rem 1rem;
+	text-align: center;
+	text-decoration: none;
+}
+/*Definición de las pseudo-clases para los links*/
+nav a:link {
+    background-color:green ;
+    color: chocolate;
+}
+
+nav a:visited {
+    background-color:orange ;
+    color: blue;
+}
+
+nav a:hover {
+    background-color:purple ;
+    color: darksalmon;
+}
+
+nav a:active {
+    background-color:lavender;
+    color: aqua;
+}
+/*Contenido de la página*/
+main {
+    background-color: black;
+}
+section{
+    background-color: white;
+}
+
+section img {
+    background-color: darkslategray;
+}
+
+h3,h4,h5,h6 {
+    background-color: indigo;
+    color: floralwhite;
+}
+
+aside {
+    background-color: brown ;
+}
+
+/*Pie de página*/
+
+footer {
+	background: gold;
+	padding: 1rem;
+	text-align: center;
 }
