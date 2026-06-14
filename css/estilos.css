@@ -1,53 +1,65 @@
 /*Estilos para el recuperatorio de la segunda parte del primer parcial.*/
-/*El diseño también debe incluir colores de fondo y colores de texto, márgenes y padding que permitan una correcta organización y legibilidad del contenido.*/
-/*Se debe trabajar con rem y porcentajes como unidades de medida.*/
+
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     font-family: "Glegoo", sans-serif;
     background-image: url("../img/fondo.jpg");
     background-color: pink;
+    line-height: 1.6;
 }
 
 #contenedor {
     width: 100%;
     max-width: 960px;
-    margin: 0 auto;
+    margin: 2rem auto;
 }
 /*Encabezado*/
 header {
     background: lightgreen;
-	padding: 1rem;
+	padding: 2rem 1rem;
 	text-align: center;
 }
 
 h1,h2 {
     color: crimson;
     background-color: darkgrey;
+    padding: 0.5rem 1rem; 
+    margin-bottom: 1rem;
 }
+
+h2 {
+    margin-bottom: 1.5rem; 
+}
+
 /*Menú de navegación*/
 nav {
     background-color: darkgray;
+    padding: 0.5rem;
 }
 /*Eliminación de márgenes, padding y estilo de la lista <ul>*/
 nav ul {  
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
+    text-align: center;
 }
 /*Cambio de la propiedad display de los elementos <li> como inline-block*/
 nav li {
-    display: inline-block; 
+    display: inline-block;
+    margin:  0.5rem;
 }
 /*Definición de las dimensiones de los elementos <a>*/
 nav a {  
-	font-size: 1.4em;
-	line-height: 2.2em;
-	padding: 0.4rem 1rem;
-	text-align: center;
-	text-decoration: none;
+	font-size: 1.2rem; 
+    line-height: 1.4;
+    padding: 0.6rem 1.2rem; 
+    display: block;
+    text-decoration: none;
 }
 /*Definición de las pseudo-clases para los links*/
 nav a:link {
@@ -72,28 +84,46 @@ nav a:active {
 /*Contenido de la página*/
 main {
     background-color: black;
+    padding: 1.5rem;
 }
 section{
     background-color: white;
+    padding: 2rem; 
+    margin-bottom: 1.5rem;
+}
+
+p {
+    margin-bottom: 1.2rem; 
 }
 
 section img {
     background-color: darkslategray;
+    display: block;
+    max-width: 100%; 
+    height: auto;
+    margin: 1.5rem auto; 
+    padding: 0.5rem; 
 }
 
 h3,h4,h5,h6 {
     background-color: indigo;
     color: floralwhite;
+    padding: 0.6rem 1rem; 
+    margin-top: 1.5rem;   
+    margin-bottom: 1rem;
 }
 
 aside {
     background-color: brown ;
+    padding: 1.5rem; 
+    margin-top: 2rem;
 }
 
 /*Pie de página*/
 
 footer {
-	background: gold;
-	padding: 1rem;
-	text-align: center;
+    background: gold;
+    padding: 1.5rem 1rem; 
+    text-align: center;
+    margin-top: 1.5rem; 
 }
